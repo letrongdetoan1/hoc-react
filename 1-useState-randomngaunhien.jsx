@@ -4,8 +4,7 @@ function App() {
     const [gift, setGift] = useState()
     const gifts = ['Ô tô', 'Xe máy', 'Xe đạp']
     function handleGift() {
-      console.log(gifts.length);
-        let index = Math.floor((Math.random()) * gifts.length)
+        let index = Math.floor(Math.random * gifts.length)
         console.log(index);
         setGift(gifts[index])
     }
