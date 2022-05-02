@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
-import Content from "./Content";
+import { useState, useEffect, useCallback } from "react";
+import Content from "./Content.jsx";
 function App() {
-    const [mount, setMount] = useState(true);
     return (
         <div className="App">
-            <button onClick={() => setMount(!mount)}>Toggle</button>
-            {mount || <Content />}
+            <Content />
         </div>
     );
 }
